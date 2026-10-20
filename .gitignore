@@ -1,0 +1,15 @@
+node_modules/
+.pnpm-store/
+.wrangler/
+.data/
+.env*
+.dev.vars*
+*.sqlite*
+*.csv
+*.zip
+*.docx
+research/output/
+!research/output/.gitkeep
+coverage/
+screenshots/
+dist/

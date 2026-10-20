@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "saathi-wellbeing",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-20",
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": true },
+  "observability": { "enabled": true },
+  "triggers": { "crons": ["0 3 * * *"] },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "saathi-wellbeing",
+    "database_id": "ba56bac7-92ac-4293-89f8-8fda0e6caf03",
+    "migrations_dir": "migrations"
+  }]
+}
